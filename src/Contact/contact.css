@@ -1,0 +1,29 @@
+.contact-us {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-info h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.contact-info p {
+  color: #777;
+}

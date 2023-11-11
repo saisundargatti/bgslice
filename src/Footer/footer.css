@@ -1,0 +1,29 @@
+.footer {
+  padding: 20px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation Links */
+.nav {
+  margin: 10px;
+}
+
+.nav-link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #666;
+  font-size: 16px;
+}
+
+.nav-link:hover {
+  color: #000;
+}

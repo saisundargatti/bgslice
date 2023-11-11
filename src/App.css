@@ -1,0 +1,236 @@
+.bg-container {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+.middle-section {
+  min-height: 100vh;
+}
+
+/* Styles for the card container */
+.upload-card {
+  background-color: #ffffff; /* Background color of the card */
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px; /* Adjust the width as needed */
+  margin: 20px auto; /* Center the card horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: dashed;
+  border-color: #0074d9;
+  border-width: 2px;
+}
+
+/* Styles for the input field within the card */
+.local-container input[type="file"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Styles for the "or" text and anchor link within the card */
+.url-container {
+  display: flex;
+  align-items: center;
+}
+
+.url-container .p-tag {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.url-container .anchor-link {
+  cursor: pointer;
+  color: #0074d9; /* Change the color as needed */
+  text-decoration: underline;
+  font-size: 14px;
+}
+/* Style the input element */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+/* Style the input element when focused */
+input[type="text"]:focus {
+  border-color: #0074d9; /* Change the color as needed */
+  outline: none;
+}
+
+/* Style for invalid input */
+input[type="text"].invalid {
+  border-color: red;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.d-props {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.file-input {
+  display: none; /* Hide the default file input button */
+}
+
+.file-label {
+  background-color: #0074d9; /* Background color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Add some padding for better styling */
+  border: none; /* Remove the border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-weight: bold; /* Make the text bold */
+  width: 160px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.file-label div {
+  margin: 0;
+  padding: 0;
+}
+.file-label p {
+  margin-left: 10px;
+}
+
+/* Style for when hovering over the label */
+.file-label:hover {
+  background-color: #0056b3; /* Change the background color on hover */
+}
+.bg-removal-text {
+  font-size: 32px; /* Increase font size for emphasis */
+  color: #333; /* Text color for the main text */
+  font-family: "Roboto", sans-serif; /* Choose a beautiful font-family */
+  text-align: center;
+  margin-top: 10px; /* Add some space below the header */
+  /* Add other styling properties as needed */
+  max-width: 600px;
+  margin: 20px auto;
+}
+/* Styles for the "Provide Image URL" link */
+.anchor-link {
+  cursor: pointer;
+  color: #0074d9; /* Change the color as needed */
+  text-decoration: underline;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.p-tag {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.url-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .popup {
+    width: 50%;
+  }
+}
+
+/* Styles for the input field */
+/* Default styles for .popup input */
+.popup input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Apply backdrop blur effect */
+.popup-container {
+  backdrop-filter: blur(5px);
+}
+
+/* Styles for the error message */
+.popup p {
+  color: red;
+}
+
+/* Styles for buttons in the popup */
+.popup button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #0074d9; /* Change the color as needed */
+  color: #fff; /* Text color */
+}
+
+/* Styles for the "Cancel" button */
+.popup button.cancel {
+  background-color: #ccc; /* Change the color as needed */
+}
+
+/* Styles for the ProcessedImageDisplay container */
+.processed-img-container {
+  margin-top: 20px;
+  text-align: center;
+}
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-top: 40px;
+}
+.error-message {
+  color: #ff0000; /* Red text color */
+  font-weight: bold; /* Bold text */
+  border: 1px solid #ff0000; /* Red border */
+  padding: 10px; /* Padding around the text */
+  margin: 20px; /* Margin above and below the error message */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: medium;
+}
+.error-message p {
+  margin: 5px;
+}

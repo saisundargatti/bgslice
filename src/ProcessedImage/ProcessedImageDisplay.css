@@ -1,0 +1,130 @@
+/* Default styles for .image-card, applicable to screens less than 576px (mobile devices) */
+.image-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.image-card {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  color: black;
+}
+
+/* Media query for screens with a minimum width of 576px (larger screens)*/
+@media (min-width: 576px) {
+  .image-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+}
+.original {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.original img {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.processed-img-container {
+  background-color: #fff; /* Set a white background color */
+  background-image: linear-gradient(
+      45deg,
+      #d3d3d3 25%,
+      transparent 25%,
+      transparent 75%,
+      #d3d3d3 75%,
+      #d3d3d3
+    ),
+    /* Create a diagonal grey and transparent gradient */
+      linear-gradient(
+        45deg,
+        #d3d3d3 25%,
+        transparent 25%,
+        transparent 75%,
+        #d3d3d3 75%,
+        #d3d3d3
+      ); /* Create another diagonal grey and transparent gradient */
+  background-position: 0 0, 50px 50px; /* Position the gradients */
+  background-size: 20px 20px; /* Set the size of the gradients */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.processed-img-container img {
+  margin-bottom: 10px;
+}
+
+/* Default styles for img */
+img {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* Responsive styles for img on screens smaller than 768px */
+@media (max-width: 767px) {
+  img {
+    max-width: 100%; /* Resize the image to fit the container width */
+    max-height: auto; /* Allow the height to adjust proportionally */
+  }
+}
+
+/* Responsive styles for img on screens larger than 768px */
+@media (min-width: 768px) {
+  img {
+    max-width: 400px; /* Limit the width to 400px */
+    max-height: 400px; /* Limit the height to 400px */
+  }
+}
+.timer {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.timer p {
+  margin: 0px;
+}
+
+.time {
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.time p {
+  margin-left: 10px;
+}
+.f-props {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
